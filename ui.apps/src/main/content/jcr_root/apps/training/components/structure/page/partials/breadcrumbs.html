@@ -1,0 +1,7 @@
+<pre data-sly-use.bread="pl.hen.training.core.models.BreadCrumbModel">
+    <div data-sly-list.it="${bread.getAllParents}">
+        <a href="${it.path}.html"> ${it.title} </a>
+    </div>
+
+        <a href="${bread.getCurrentPage.path}.html"> ${bread.getCurrentPage.title}</a>
+</pre>

@@ -1,0 +1,15 @@
+<h3>Resource finder</h3>
+<sly data-sly-use.model="pl.hen.training.core.models.ResourceFindModel">
+    <p>log</p>
+    <p>${model.logging}</p>
+    <p>log end</p>
+<ul data-sly-list.it="${model.allResourcesByTagName}">
+    <li>${it.path}  class =   ${it.toString}</li>
+    </ul>
+<p>query</p>
+<ul data-sly-list.it="${model.resourcesByType}">
+    <li>${it.path}  class =  ${it.toString}</li>
+
+</ul>
+</sly>
+

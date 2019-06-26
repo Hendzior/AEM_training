@@ -1,0 +1,12 @@
+<p> table </p>
+<sly data-sly-use.model="pl.hen.training.core.models.TableModel">
+    <table>
+        <div data-sly-list.item="${model.rowsList}">
+            <tr style="border: 1px solid">
+                <div data-sly-list.it="${model.columnsList}">
+                    <td style="border: 1px solid">${it}</td>
+                </div>
+            </tr>
+        </div>
+    </table>
+</sly>
