@@ -17,9 +17,6 @@ import java.util.List;
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class TableModel {
 
-    @Self
-    private Resource resource;
-
     @Inject
     private String tableRows;
 

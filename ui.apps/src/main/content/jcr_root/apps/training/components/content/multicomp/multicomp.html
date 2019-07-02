@@ -1,0 +1,12 @@
+<p> component</p>
+<sly data-sly-use.model="pl.hen.training.core.models.MultiCompModel">
+    <p>${model.logging}</p>
+    <ul data-sly-list.it="${model.repeatList}">
+
+        <li>
+            <div data-sly-test.nodeName="localtime${it}"
+                    data-sly-resource="${nodeName @ resourceType='training/components/content/localtime'}">
+            </div>
+        </li>
+    </ul>
+    <p> end component</p>

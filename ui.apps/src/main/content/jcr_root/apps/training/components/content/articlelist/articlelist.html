@@ -1,0 +1,7 @@
+Article list:
+<sly data-sly-use.model="pl.hen.training.core.models.ArticleListModel">
+<ul data-sly-list.child="${model.articles}">
+    <a href="${child.path}.html">${child.name}</a>
+</ul>
+</sly>
+Article list end.
