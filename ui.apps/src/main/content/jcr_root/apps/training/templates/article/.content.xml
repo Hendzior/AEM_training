@@ -7,7 +7,7 @@
     ranking="{Long}101">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="training/components/structure/page">
+        sling:resourceType="training/components/structure/article">
         <logo
             jcr:primaryType="nt:unstructured"
             sling:resourceType="training/components/structure/logo"/>
@@ -17,19 +17,27 @@
         <topnav
             jcr:primaryType="nt:unstructured"
             sling:resourceType="training/components/structure/topnav"/>
-
-        <par
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/parsys">
-
-            <text
+        <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/image"/>
+        <text
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="training/components/content/text"
                 text="&lt;p>This is a article page&lt;/p>"
                 textIsRich="true"/>
-            <image
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="training/components/content/image"/>
-        </par>
+        <!--<par-->
+            <!--jcr:primaryType="nt:unstructured"-->
+            <!--sling:resourceType="wcm/foundation/components/parsys">-->
+
+
+            <!--<text-->
+                <!--jcr:primaryType="nt:unstructured"-->
+                <!--sling:resourceType="training/components/content/text"-->
+                <!--text="&lt;p>This is a article page&lt;/p>"-->
+                <!--textIsRich="true"/>-->
+            <!--<image-->
+                    <!--jcr:primaryType="nt:unstructured"-->
+                    <!--sling:resourceType="training/components/content/image"/>-->
+        <!--</par>-->
     </jcr:content>
 </jcr:root>

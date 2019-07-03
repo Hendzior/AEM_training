@@ -23,7 +23,7 @@ public class ArticleListModel {
         ResourceResolver resourceResolver = resource.getResourceResolver();
         Iterator<Resource> resources = resourceResolver.findResources("SELECT * FROM [cq:Page] AS s " +
                 "WHERE ISDESCENDANTNODE([/content/hen-training/fr/en_fr]) " +
-                "and [jcr:content/cq:template]='/apps/training/templates/article'", Query.JCR_SQL2);
+                "and [jcr:content/cq:template]='/apps/training/templates/article' ORDER BY [jcr:created] desc", Query.JCR_SQL2);
 
         Set<String> resourceSet = new HashSet<>();
         List<Resource> resourceList = new ArrayList<>();
