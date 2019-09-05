@@ -1,0 +1,7 @@
+<pre data-sly-use.nav="pl.hen.training.core.models.NavigationModel">
+
+<div data-sly-list.it="${nav.getAllChildren}">
+    <a href="${it.path}.html"> ${it.title} </a>
+</div>
+<a href="${nav.getCurrentPage.path}.html"> ${nav.getCurrentPage.title}</a>
+    </pre>

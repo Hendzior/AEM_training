@@ -1,0 +1,18 @@
+Article list:
+<sly data-sly-use.model="pl.hen.training.core.models.ArticleListModel">
+
+<ul data-sly-list.child="${model.articles}">
+   <li><a href="${child.path}.html">
+        <div data-sly-test.pathToContent="${child.path}/jcr:content"
+         data-sly-resource="${pathToContent @ selectors='tile'}">
+
+        </div>
+ ${child.path}
+    </a>
+   </li>
+</ul>
+</sly>
+include:
+
+Article list end.
+<!--<div data-sly-resource="${child.path}.tile.html"></div>-->

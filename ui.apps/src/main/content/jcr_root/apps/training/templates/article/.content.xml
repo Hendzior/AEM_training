@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Article page template"
+    jcr:primaryType="cq:Template"
+    jcr:title="Article Page"
+    allowedPaths="[/content/hen-training/.+]"
+    ranking="{Long}101">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="training/components/structure/article">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="training/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="training/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="training/components/structure/topnav"/>
+        <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/image"/>
+        <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/text"
+                text="&lt;p>This is a article page&lt;/p>"
+                textIsRich="true"/>
+        <!--<par-->
+            <!--jcr:primaryType="nt:unstructured"-->
+            <!--sling:resourceType="wcm/foundation/components/parsys">-->
+
+
+            <!--<text-->
+                <!--jcr:primaryType="nt:unstructured"-->
+                <!--sling:resourceType="training/components/content/text"-->
+                <!--text="&lt;p>This is a article page&lt;/p>"-->
+                <!--textIsRich="true"/>-->
+            <!--<image-->
+                    <!--jcr:primaryType="nt:unstructured"-->
+                    <!--sling:resourceType="training/components/content/image"/>-->
+        <!--</par>-->
+    </jcr:content>
+</jcr:root>
